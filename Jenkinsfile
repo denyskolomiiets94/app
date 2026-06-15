@@ -50,8 +50,16 @@ pipeline {
     }
 
     post {
+        success {
+            echo 'Build SUCCESS'
+        }
+
         failure {
             echo 'Tests failed'
+        }
+
+        always {
+            cleanWs()
         }
     }
 }
