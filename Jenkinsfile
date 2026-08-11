@@ -59,7 +59,7 @@ pipeline {
         }
 
         always {
-            clean22Ws()
+            cleanWs()
         }
     }
 }
